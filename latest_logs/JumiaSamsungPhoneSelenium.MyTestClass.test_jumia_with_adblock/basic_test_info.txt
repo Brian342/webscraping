@@ -1,0 +1,15 @@
+JumiaSamsungPhoneSelenium.py::MyTestClass::test_jumia_with_adblock
+--------------------------------------------------------------------
+Last Page: https://www.kilimall.co.ke/
+ Duration: 16.83s
+  Browser: Chrome 132.0.6834.160
+   Driver: chromedriver 132.0.6834.110
+Timestamp: 1738203849  (Unix Timestamp)
+     Date: Thursday, 30 January 2025
+     Time: 5:24:09 AM  (EAT, UTC+03:00)
+--------------------------------------------------------------------
+Traceback:
+  File "/Users/briankimanzi/Documents/python /webscraping/JumiaSamsungPhoneSelenium.py", line 36, in test_jumia_with_adblock
+    submit = self.find_elements(By.NAME, 'submit_button').click()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Exception: 'list' object has no attribute 'click'
