@@ -9,7 +9,7 @@ driver.maximize_window()
 
 all_links = driver.find_elements(By.TAG_NAME, "a")
 print(f"Total no of links on page, {len(all_links)} ")
-
+# iteration over the links
 for link in all_links:
     href = link.get_attribute('href')
     response = requests.get(href)
