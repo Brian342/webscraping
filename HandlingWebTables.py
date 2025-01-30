@@ -24,3 +24,5 @@ for row in rows:
 if not found:
     print(f"Target value: '{target_value}' not found")
 time.sleep(10)
+
+# a nested loop that looks at each row then each cell in the row until value is found
