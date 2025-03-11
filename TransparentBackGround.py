@@ -2,7 +2,7 @@ import numpy as np
 import cv2
 from matplotlib import pyplot as plt
 
-img = cv2.imread('/Users/briankimanzi/Downloads/Transparency.jpg')
+img = cv2.imread('/Users/briankimanzi/Downloads/transparent2.jpg')
 mask = np.zeros(img.shape[:2], np.uint8)
 
 bgdModel = np.zeros((1, 65), np.float64)
@@ -17,7 +17,7 @@ img = img * mask2[:, :, np.newaxis]
 plt.subplot(121), plt.imshow(img)
 plt.title("grabcut"), plt.xticks([]), plt.yticks([])
 plt.subplot(122),
-plt.imshow(cv2.cvtColor(cv2.imread('/Users/briankimanzi/Downloads/Transparency.jpg'),
+plt.imshow(cv2.cvtColor(cv2.imread('/Users/briankimanzi/Downloads/transparent2.jpg'),
                         cv2.COLOR_BGR2RGB))
 plt.title("original"), plt.xticks([]), plt.yticks([])
 
