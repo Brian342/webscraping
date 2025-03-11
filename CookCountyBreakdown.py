@@ -10,7 +10,7 @@ from selenium.common import NoSuchElementException
 
 driver = webdriver.Chrome()
 driver.maximize_window()
-driver.execute_script("window.scrollTo(0,700)")  # used for scrolling a website horizontal, vertical
+driver.execute_script("window.scrollTo(0,900)")  # used for scrolling a website horizontal, vertical
 
 driver.get(
     url="https://dph.illinois.gov/topics-services/diseases-and-conditions/hiv-aids/hiv-surveillance/update-reports/2023/february.html")
